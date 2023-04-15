@@ -9,21 +9,45 @@
 /* Begin PBXBuildFile section */
 		A424C04929EA7D2D0080C7E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A424C04829EA7D2D0080C7E1 /* AppDelegate.swift */; };
 		A424C04B29EA7D2D0080C7E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A424C04A29EA7D2D0080C7E1 /* SceneDelegate.swift */; };
-		A424C04D29EA7D2D0080C7E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A424C04C29EA7D2D0080C7E1 /* ViewController.swift */; };
-		A424C05029EA7D2D0080C7E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A424C04E29EA7D2D0080C7E1 /* Main.storyboard */; };
+		A424C04D29EA7D2D0080C7E1 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A424C04C29EA7D2D0080C7E1 /* CardsViewController.swift */; };
 		A424C05229EA7D2D0080C7E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A424C05129EA7D2D0080C7E1 /* Assets.xcassets */; };
 		A424C05529EA7D2D0080C7E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A424C05329EA7D2D0080C7E1 /* LaunchScreen.storyboard */; };
+		A424C05D29EA7FEB0080C7E1 /* CardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A424C05C29EA7FEB0080C7E1 /* CardsViewModel.swift */; };
+		A424C05F29EA80D70080C7E1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A424C05E29EA80D70080C7E1 /* Constants.swift */; };
+		A424C06229EA84A10080C7E1 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A424C06129EA84A10080C7E1 /* NetworkManager.swift */; };
+		A424C06829EA9C080080C7E1 /* RequestHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A424C06729EA9C080080C7E1 /* RequestHeader.swift */; };
+		A424C06A29EA9D7C0080C7E1 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A424C06929EA9D7C0080C7E1 /* Card.swift */; };
+		A424C06E29EAA0700080C7E1 /* LoyaltyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A424C06D29EAA0700080C7E1 /* LoyaltyCell.swift */; };
+		A424C07029EAA6C60080C7E1 /* UIView + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A424C06F29EAA6C60080C7E1 /* UIView + Extensions.swift */; };
+		A424C07329EAB32C0080C7E1 /* CompanyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A424C07229EAB32C0080C7E1 /* CompanyCell.swift */; };
+		A424C07529EAB3350080C7E1 /* ActionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A424C07429EAB3350080C7E1 /* ActionsCell.swift */; };
+		A424C07729EAB4490080C7E1 /* CGFloat + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A424C07629EAB4490080C7E1 /* CGFloat + Extensions.swift */; };
+		A424C07929EAC0420080C7E1 /* UIColor + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A424C07829EAC0420080C7E1 /* UIColor + Extensions.swift */; };
+		A424C08829EAFF420080C7E1 /* SpinningCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A424C08729EAFF420080C7E1 /* SpinningCircleView.swift */; };
+		A424C08D29EB01950080C7E1 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A424C08C29EB01950080C7E1 /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A424C04529EA7D2D0080C7E1 /* TechTask-CardsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TechTask-CardsApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A424C04829EA7D2D0080C7E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A424C04A29EA7D2D0080C7E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A424C04C29EA7D2D0080C7E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A424C04F29EA7D2D0080C7E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A424C04C29EA7D2D0080C7E1 /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 		A424C05129EA7D2D0080C7E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A424C05429EA7D2D0080C7E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A424C05629EA7D2D0080C7E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A424C05C29EA7FEB0080C7E1 /* CardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewModel.swift; sourceTree = "<group>"; };
+		A424C05E29EA80D70080C7E1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A424C06129EA84A10080C7E1 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A424C06729EA9C080080C7E1 /* RequestHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHeader.swift; sourceTree = "<group>"; };
+		A424C06929EA9D7C0080C7E1 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		A424C06D29EAA0700080C7E1 /* LoyaltyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoyaltyCell.swift; sourceTree = "<group>"; };
+		A424C06F29EAA6C60080C7E1 /* UIView + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extensions.swift"; sourceTree = "<group>"; };
+		A424C07229EAB32C0080C7E1 /* CompanyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyCell.swift; sourceTree = "<group>"; };
+		A424C07429EAB3350080C7E1 /* ActionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsCell.swift; sourceTree = "<group>"; };
+		A424C07629EAB4490080C7E1 /* CGFloat + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat + Extensions.swift"; sourceTree = "<group>"; };
+		A424C07829EAC0420080C7E1 /* UIColor + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extensions.swift"; sourceTree = "<group>"; };
+		A424C08729EAFF420080C7E1 /* SpinningCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinningCircleView.swift; sourceTree = "<group>"; };
+		A424C08C29EB01950080C7E1 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +80,91 @@
 		A424C04729EA7D2D0080C7E1 /* TechTask-CardsApp */ = {
 			isa = PBXGroup;
 			children = (
-				A424C04829EA7D2D0080C7E1 /* AppDelegate.swift */,
-				A424C04A29EA7D2D0080C7E1 /* SceneDelegate.swift */,
-				A424C04C29EA7D2D0080C7E1 /* ViewController.swift */,
-				A424C04E29EA7D2D0080C7E1 /* Main.storyboard */,
+				A424C06B29EAA02D0080C7E1 /* Support */,
+				A424C06C29EAA04F0080C7E1 /* CardsScreen */,
+				A424C06629EA8A8A0080C7E1 /* Models */,
+				A424C06329EA84A40080C7E1 /* Services */,
+				A424C06029EA80DB0080C7E1 /* Constants */,
+				A424C07129EAA6CE0080C7E1 /* Extensions */,
+				A424C08929EAFF480080C7E1 /* CustomUIElements */,
 				A424C05129EA7D2D0080C7E1 /* Assets.xcassets */,
 				A424C05329EA7D2D0080C7E1 /* LaunchScreen.storyboard */,
 				A424C05629EA7D2D0080C7E1 /* Info.plist */,
 			);
 			path = "TechTask-CardsApp";
+			sourceTree = "<group>";
+		};
+		A424C06029EA80DB0080C7E1 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				A424C05E29EA80D70080C7E1 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		A424C06329EA84A40080C7E1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A424C06129EA84A10080C7E1 /* NetworkManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A424C06629EA8A8A0080C7E1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A424C06729EA9C080080C7E1 /* RequestHeader.swift */,
+				A424C06929EA9D7C0080C7E1 /* Card.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A424C06B29EAA02D0080C7E1 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				A424C04829EA7D2D0080C7E1 /* AppDelegate.swift */,
+				A424C04A29EA7D2D0080C7E1 /* SceneDelegate.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		A424C06C29EAA04F0080C7E1 /* CardsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A424C04C29EA7D2D0080C7E1 /* CardsViewController.swift */,
+				A424C05C29EA7FEB0080C7E1 /* CardsViewModel.swift */,
+				A424C07E29EAC4F10080C7E1 /* Cells */,
+			);
+			path = CardsScreen;
+			sourceTree = "<group>";
+		};
+		A424C07129EAA6CE0080C7E1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A424C06F29EAA6C60080C7E1 /* UIView + Extensions.swift */,
+				A424C07629EAB4490080C7E1 /* CGFloat + Extensions.swift */,
+				A424C07829EAC0420080C7E1 /* UIColor + Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A424C07E29EAC4F10080C7E1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A424C07229EAB32C0080C7E1 /* CompanyCell.swift */,
+				A424C06D29EAA0700080C7E1 /* LoyaltyCell.swift */,
+				A424C07429EAB3350080C7E1 /* ActionsCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		A424C08929EAFF480080C7E1 /* CustomUIElements */ = {
+			isa = PBXGroup;
+			children = (
+				A424C08729EAFF420080C7E1 /* SpinningCircleView.swift */,
+				A424C08C29EB01950080C7E1 /* LoadingView.swift */,
+			);
+			path = CustomUIElements;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +227,6 @@
 			files = (
 				A424C05529EA7D2D0080C7E1 /* LaunchScreen.storyboard in Resources */,
 				A424C05229EA7D2D0080C7E1 /* Assets.xcassets in Resources */,
-				A424C05029EA7D2D0080C7E1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +237,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A424C04D29EA7D2D0080C7E1 /* ViewController.swift in Sources */,
+				A424C08829EAFF420080C7E1 /* SpinningCircleView.swift in Sources */,
+				A424C07029EAA6C60080C7E1 /* UIView + Extensions.swift in Sources */,
+				A424C06229EA84A10080C7E1 /* NetworkManager.swift in Sources */,
+				A424C05F29EA80D70080C7E1 /* Constants.swift in Sources */,
+				A424C07929EAC0420080C7E1 /* UIColor + Extensions.swift in Sources */,
+				A424C08D29EB01950080C7E1 /* LoadingView.swift in Sources */,
+				A424C05D29EA7FEB0080C7E1 /* CardsViewModel.swift in Sources */,
+				A424C06829EA9C080080C7E1 /* RequestHeader.swift in Sources */,
+				A424C07529EAB3350080C7E1 /* ActionsCell.swift in Sources */,
+				A424C04D29EA7D2D0080C7E1 /* CardsViewController.swift in Sources */,
 				A424C04929EA7D2D0080C7E1 /* AppDelegate.swift in Sources */,
 				A424C04B29EA7D2D0080C7E1 /* SceneDelegate.swift in Sources */,
+				A424C07729EAB4490080C7E1 /* CGFloat + Extensions.swift in Sources */,
+				A424C07329EAB32C0080C7E1 /* CompanyCell.swift in Sources */,
+				A424C06A29EA9D7C0080C7E1 /* Card.swift in Sources */,
+				A424C06E29EAA0700080C7E1 /* LoyaltyCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A424C04E29EA7D2D0080C7E1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A424C04F29EA7D2D0080C7E1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A424C05329EA7D2D0080C7E1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +396,6 @@
 				INFOPLIST_FILE = "TechTask-CardsApp/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +423,6 @@
 				INFOPLIST_FILE = "TechTask-CardsApp/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
