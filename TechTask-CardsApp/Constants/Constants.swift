@@ -20,7 +20,7 @@ enum StringConstants {
     static let eyeButtonTaped = "Нажата кнопка Eye, id компании:"
     static let trashButtonTapped = "Нажата кнопка Trash, id компании:"
     static let moreButtonTapped = "Нажата кнопка Подробнее, id компании:"
-    static let url = "http://dev.bonusmoney.pro/mobileapp/getAllCompaniesError"
+    static let url = "http://dev.bonusmoney.pro/mobileapp/getAllCompanies"
 }
 
 enum Images {

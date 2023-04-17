@@ -46,7 +46,7 @@ final class SpinningCircleView: UIView {
             } completion: { completed in
                 self.animate()
             }
-            
         }
     }
+    
 }

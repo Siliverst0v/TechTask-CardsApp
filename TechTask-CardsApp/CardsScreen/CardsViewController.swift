@@ -25,6 +25,7 @@ class CardsViewController: UIViewController {
         )
         tableView.backgroundColor = Colors.lightGrey
         tableView.allowsSelection = false
+        tableView.showsVerticalScrollIndicator = false
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(
@@ -56,7 +57,7 @@ class CardsViewController: UIViewController {
         setupView()
         setupLayout()
         getCards()
-        bindWithData()
+        bindWithErrors()
     }
     
     private func setupView() {
@@ -83,12 +84,13 @@ class CardsViewController: UIViewController {
         ])
     }
     
-    private func bindWithData() {
+    private func bindWithErrors() {
         
-        viewModel.onBadRequestError = { [weak self] in
+        viewModel.onBadRequestError = { [weak self] message in
             DispatchQueue.main.async {
-                self?.showAlert(title: StringConstants.error, message: "Server response")
+                self?.showAlert(title: StringConstants.error, message: message)
                 self?.cardsTableView.tableHeaderView = nil
+                self?.cardsTableView.tableFooterView = nil
             }
         }
         
@@ -96,6 +98,7 @@ class CardsViewController: UIViewController {
             DispatchQueue.main.async {
                 self?.showAlert(title: StringConstants.error, message: StringConstants.authError)
                 self?.cardsTableView.tableHeaderView = nil
+                self?.cardsTableView.tableFooterView = nil
             }
         }
         
@@ -103,6 +106,7 @@ class CardsViewController: UIViewController {
             DispatchQueue.main.async {
                 self?.showAlert(title: StringConstants.error, message: StringConstants.serverError)
                 self?.cardsTableView.tableHeaderView = nil
+                self?.cardsTableView.tableFooterView = nil
             }
         }
     }
@@ -129,7 +133,7 @@ extension CardsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        3
+        viewModel.getNumberOfRows()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

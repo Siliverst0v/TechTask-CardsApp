@@ -17,7 +17,7 @@ final class CompanyCell: UITableViewCell {
         return label
     }()
     
-    private let logoView: UIImageView = {
+    private lazy var logoView: UIImageView = {
         let view = UIImageView()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.layer.masksToBounds = true
@@ -73,13 +73,10 @@ extension CompanyCell {
         companyNameLabel.text = cellInfo.mobileAppDashboard.companyName
         companyNameLabel.textColor = UIColor(hex: highlightTextColor)
         
-        DispatchQueue.global().async {
-            guard let url = URL(string: cellInfo.mobileAppDashboard.logo),
-                  let data = try? Data(contentsOf: url) else { return }
-            DispatchQueue.main.async {
-                self.logoView.image = UIImage(data: data)
-                self.logoView.layer.cornerRadius = self.logoView.frame.size.height / 2
-            }
+        viewModel.getImage(from: cellInfo.mobileAppDashboard.logo) { image in
+            self.logoView.image = image
+            self.logoView.layer.cornerRadius = self.logoView.frame.size.height / 2
         }
     }
+    
 }

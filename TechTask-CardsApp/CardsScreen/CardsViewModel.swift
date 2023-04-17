@@ -5,20 +5,22 @@
 //  Created by Анатолий Силиверстов on 15.04.2023.
 //
 
-import Foundation
+import UIKit
 
 protocol CardsViewModelType {
     var cards: [Card] {get set}
     var canLoadMore: Bool {get set}
     var isLoading: Bool {get set}
-    var onGetCardsSuccess: (() -> Void)? {get set}
+    
     var onAuthError: (() -> Void)? {get set}
-    var onBadRequestError: (() -> Void)? {get set}
+    var onBadRequestError: ((String) -> Void)? {get set}
     var onInternalServerError: (() -> Void)? {get set}
+    
     func getCards(offset: Int?, completion: @escaping () -> Void)
     func getNumberOfSections() -> Int
+    func getNumberOfRows() -> Int
     func getCellInfo(for indexPath: IndexPath) -> Card
-    func getCompanyId(for indexPath: IndexPath) -> String
+    func getImage(from url: String, completion: @escaping (UIImage?) -> Void)
 }
 
 final class CardsViewModel: CardsViewModelType {
@@ -28,14 +30,14 @@ final class CardsViewModel: CardsViewModelType {
     var canLoadMore = true
     var isLoading = false
     
-    var onGetCardsSuccess: (() -> Void)?
     var onAuthError: (() -> Void)?
-    var onBadRequestError: (() -> Void)?
+    var onBadRequestError: ((String) -> Void)?
     var onInternalServerError: (() -> Void)?
     
     func getCards(offset: Int? = nil, completion: @escaping () -> Void) {
         guard let url = URL(string: StringConstants.url) else {return}
         self.isLoading = true
+        var errorMessage = ""
         networkManager.getCards(from: url, offset: offset) { result in
             switch result {
                 
@@ -56,6 +58,8 @@ final class CardsViewModel: CardsViewModelType {
                         }
                         completion()
                     }
+                } else if let responseError = try? JSONDecoder().decode(ResponseMessage.self, from: data) {
+                    errorMessage = responseError.message
                 }
                 
             case .failure(let failure):
@@ -63,7 +67,7 @@ final class CardsViewModel: CardsViewModelType {
                     switch error {
                         
                     case .badRequest:
-                        self.onBadRequestError?()
+                        self.onBadRequestError?(errorMessage)
                     case .authError:
                         self.onAuthError?()
                     case .internalServerError:
@@ -78,11 +82,21 @@ final class CardsViewModel: CardsViewModelType {
         cards.count
     }
     
+    func getNumberOfRows() -> Int {
+        3
+    }
+    
     func getCellInfo(for indexPath: IndexPath) -> Card {
         self.cards[indexPath.section]
     }
     
-    func getCompanyId(for indexPath: IndexPath) -> String {
-        self.cards[indexPath.section].company.companyId
+    func getImage(from url: String, completion: @escaping (UIImage?) -> Void) {
+        guard let url = URL(string: url) else {return}
+        networkManager.loadImage(url: url) { image in
+            DispatchQueue.main.async {
+                completion(image)
+            }
+        }
     }
+    
 }

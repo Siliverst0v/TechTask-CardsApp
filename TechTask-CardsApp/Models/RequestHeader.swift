@@ -17,3 +17,8 @@ extension Header {
         Header(key: "TOKEN", value: "123")
     }
 }
+
+struct ResponseMessage: Codable {
+    let type: String
+    let message: String
+}

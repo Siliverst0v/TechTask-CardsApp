@@ -25,6 +25,7 @@
 		A424C07929EAC0420080C7E1 /* UIColor + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A424C07829EAC0420080C7E1 /* UIColor + Extensions.swift */; };
 		A424C08829EAFF420080C7E1 /* SpinningCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A424C08729EAFF420080C7E1 /* SpinningCircleView.swift */; };
 		A424C08D29EB01950080C7E1 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A424C08C29EB01950080C7E1 /* LoadingView.swift */; };
+		A4D55BAC29ED27E500C61E3B /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D55BAB29ED27E500C61E3B /* ImageCache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		A424C07829EAC0420080C7E1 /* UIColor + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extensions.swift"; sourceTree = "<group>"; };
 		A424C08729EAFF420080C7E1 /* SpinningCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinningCircleView.swift; sourceTree = "<group>"; };
 		A424C08C29EB01950080C7E1 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		A4D55BAB29ED27E500C61E3B /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				A424C06129EA84A10080C7E1 /* NetworkManager.swift */,
+				A4D55BAB29ED27E500C61E3B /* ImageCache.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 			files = (
 				A424C08829EAFF420080C7E1 /* SpinningCircleView.swift in Sources */,
 				A424C07029EAA6C60080C7E1 /* UIView + Extensions.swift in Sources */,
+				A4D55BAC29ED27E500C61E3B /* ImageCache.swift in Sources */,
 				A424C06229EA84A10080C7E1 /* NetworkManager.swift in Sources */,
 				A424C05F29EA80D70080C7E1 /* Constants.swift in Sources */,
 				A424C07929EAC0420080C7E1 /* UIColor + Extensions.swift in Sources */,
